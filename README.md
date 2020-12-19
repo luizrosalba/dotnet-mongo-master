@@ -1,5 +1,5 @@
 # Projeto dotNet com MongoDb 
-	Projeto entregue como requerimento de conclusão do curso Avanade Fullstack Developer 
+	Projeto entregue como requerimento de conclusão do curso Avanade Fullstack Developer. Este projeto abordou a utilização do mongo cloud para criar um DB mongo não relacional gratuito, que armazena recebe dados de uma API em C#. O tema deste projeto foi armazenar dados de data de nascimento, sexo, dados geográficos de uma pessoa infectada por COVID. O mongo cloud também consegue gerar gráficos, atualizados sempre que uma nova informação entra no banco que podem ser mostrados em um front-end.  
 
 # API 
 Application Programming Interface : Proporciona Integração entre sistemas 
@@ -72,17 +72,13 @@ Para produção :
   - projeto -> cluster ->user -> database 
 
 - dotnet new api -n Api 
+- mongodb+srv://api:@cluster0.duyfi.mongodb.net/<dbname>?retryWrites=true&w=majority
+- dotnet add package MongoDb.Driver
+- Boa prática : para cada endpoint uma classe 
+- Injeção de dependencia 
 - 
 
   
-
-
-
-
-
-
-
-
 
 
 
