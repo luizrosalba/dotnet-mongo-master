@@ -16,7 +16,7 @@ namespace Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<Data.MongoDB>();
+            services.AddSingleton<Data.MongoDB>(); /// usa uma unica instancia do MongoDb cuidado com estados ! 
             services.AddControllers();
         }
 

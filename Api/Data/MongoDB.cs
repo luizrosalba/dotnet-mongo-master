@@ -18,7 +18,7 @@ namespace Api.Data
                 var settings = MongoClientSettings.FromUrl(new MongoUrl(configuration["ConnectionString"]));
                 var client = new MongoClient(settings);
                 DB = client.GetDatabase(configuration["NomeBanco"]);
-                MapClasses();
+                MapClasses(); /// mapeia as entidades para o banco 
             }
             catch (Exception ex)
             {

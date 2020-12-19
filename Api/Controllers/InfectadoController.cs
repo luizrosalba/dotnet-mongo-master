@@ -12,7 +12,7 @@ namespace Api.Controllers
         Data.MongoDB _mongoDB;
         IMongoCollection<Infectado> _infectadosCollection;
 
-        public InfectadoController(Data.MongoDB mongoDB)
+        public InfectadoController(Data.MongoDB mongoDB) /// injeção de dependencia 
         {
             _mongoDB = mongoDB;
             _infectadosCollection = _mongoDB.DB.GetCollection<Infectado>(typeof(Infectado).Name.ToLower());
